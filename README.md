@@ -10,7 +10,7 @@ The smart contracts are available at https://github.com/0x73696d616f/dex-book-co
 
 ## Neural Network
 
-https://github.com/0x73696d616f/dex-book-nn
+The GRU neural network code can be found here https://github.com/0x73696d616f/dex-book-nn.
 
 ## Efficient Order Book Implementation
 
