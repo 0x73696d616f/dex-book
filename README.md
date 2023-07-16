@@ -14,15 +14,17 @@ The GRU neural network code can be found here https://github.com/0x73696d616f/de
 
 ## Efficient Order Book Implementation
 
-DexBook stores sell and buy orders in separate data structures, having a linked list of ordered prices and each node has a linked list of orders from different addresses.
+DexBook stores sell and buy orders in separate data structures, having a linked list of ordered prices where each node has a linked list of orders from different addresses.
 
 This implementation would mean delete, update actions of O(1) time and insert of O(n), which is still expensive.
 
-To overcome this, insertion hints are used, giving the previous and next prices of the to be inserted price, making it a O(1) insertion.
+To overcome this, insertion hints are used, by feeding the previous and next prices of the to be inserted price, making it a O(1) insertion.
+
+The gas costs are between 100-170k for all the actions.
 
 ## GRU neural network
 
-A gated recurrent unit neural network was training on Bitcoin/USD data of 2 years in tensorflow. It looks at the last 10 day average prices and predicts the price in 24 hours. The model shows promising results as can be seen [here](https://github.com/0x73696d616f/dex-book-nn).
+A gated recurrent unit neural network was trained on Bitcoin/USD data of 2 years in tensorflow. It looks at the last 10 day average prices and predicts the price in 24 hours. The model shows promising results as can be seen [here](https://github.com/0x73696d616f/dex-book-nn). It used 64% of the dataset for training, 16% for validation and 20% for testing.
 
 ## Storing the neural network
 
