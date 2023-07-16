@@ -4,3 +4,6 @@
 [submodule "dex-book-frontend"]
 	path = dex-book-frontend
 	url = git@github.com:0x73696d616f/dex-book-frontend.git
+[submodule "dex-book-nn"]
+	path = dex-book-nn
+	url = git@github.com:0x73696d616f/dex-book-nn.git
