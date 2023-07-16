@@ -1,0 +1,6 @@
+[submodule "dex-book-contracts"]
+	path = dex-book-contracts
+	url = git@github.com:0x73696d616f/dex-book-contracts.git
+[submodule "dex-book-frontend"]
+	path = dex-book-frontend
+	url = git@github.com:0x73696d616f/dex-book-frontend.git
